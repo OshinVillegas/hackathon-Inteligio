@@ -3,7 +3,7 @@
  
   <v-toolbar dark color="colornav">
     <img class="logo" src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/inteligonav.png" alt="">
-    <v-btn @click="GetData()" color="rgb(233,214,107)" class="admi" >Administrador</v-btn>
+    <v-btn @click="GetData()" color="#FFC107" class="admi" >Administrador</v-btn>
   </v-toolbar>
   <router-view/>
   </v-app>

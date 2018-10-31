@@ -29,7 +29,7 @@ export default {
 </script>
 <style scoped>
 .content{
-	background: url('https://images.pexels.com/photos/955447/pexels-photo-955447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat;
+	background: url('https://github.com/OshinVillegas/hackathon-Inteligo/blob/develop/src/assets/fondoinicio.png?raw=true') no-repeat;
 	background-size: cover;
 	height: 100%;
 }
@@ -46,7 +46,7 @@ export default {
 	font-size: 50px;
   letter-spacing: 1px;
   text-align: center;
-  border-left: 8px solid rgb(233,214,107);
+  border-left: 8px solid #FFC107;
   display: inline-block;
   margin: 15% 0% 5% 10%;
   padding: 0px 15px;
@@ -63,7 +63,7 @@ export default {
 	width: 10%;
 	/* height: 10%; */
   margin: 3% 40% 5% 40%;
-	background:rgb(233,214,107) !important;
+	background: #FFC107 !important;
 	color:rgb(9,25,91);
 	font-family: 'Arial Regular';
 	font-weight: bold;
