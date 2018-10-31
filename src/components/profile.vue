@@ -25,8 +25,7 @@ export default {
 	computed:{},
 	methods:{
 		register(){
-			console.log('Ahora registrate')
-			this.$router.push('/register')
+			this.$router.push('/login')
 		}
 	},
 	components:{}

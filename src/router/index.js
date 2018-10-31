@@ -6,7 +6,6 @@ import profile from '@/components/profile'
 import register from '@/components/register'
 import login from '@/components/login'
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
@@ -33,12 +32,11 @@ export default new Router({
       name:'register',
       component:register
     },
-{
-  path: '/login',
-  name: 'login',
-  component: login
+    {
+      path: '/login',
+      name: 'login',
+      component: login
 
-}
-     
+    }     
   ]
 })
