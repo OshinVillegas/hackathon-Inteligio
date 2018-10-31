@@ -3,7 +3,7 @@
  
   <v-toolbar  fluid color="colornav">
     <img src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/Screenshot_3.png" alt="">
-<v-btn round @click="GetData()" color="rgb(255, 193, 7)" class="admi" >Administrador</v-btn>
+<button  @click="GetData()" type="button" class="btn btn-link">Link</button>
   </v-toolbar>
   <router-view/>
    
@@ -14,7 +14,7 @@ export default {
   name: 'App',
 }
 </script>
-<style scoped>
+<style>
 .colornav {
     background-color: rgb(9,25,91) !important;
     border-color:rgb(9,25,91) !important;

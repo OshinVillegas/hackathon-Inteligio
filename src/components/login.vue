@@ -58,15 +58,16 @@
       >
         Registrarse
       </v-btn>
-      <v-btn round color="rgb(9,25,91)" class="btnBorrar"
-       @click="clear">Limpiar</v-btn>
+      <!-- <v-btn round color="rgb(9,25,91)" class="btnBorrar"
+       @click="clear">Limpiar</v-btn> -->
+<button @click="clear" type="button" class="btn btn-link">Limpiar </button>
+
        
     </v-form>
     
   </v-flex>
     </v-layout> 
 </v-container>
-
 </div>
 
     
@@ -198,17 +199,13 @@ export default {
   border-color: rgb(241, 241, 242);
   border-radius: 3%;
 } 
-.btnBorrar{
-  margin-bottom: 5%;
-  background: black;
-  color:white;
-  font-family: 'Arial Regular';
-}
 .btnRegistrarse{
-  margin-bottom: 5%;
-  background: black;
+  text-align: center;
+  margin-bottom: 10%;
+  background: rgb(9,25,91);
   color:white;
   font-family: 'Arial Regular';
+  margin-left: 30%;
 }
 label{
   font-family: 'Arial Regular';
@@ -217,7 +214,7 @@ label{
 margin-left: 11%;
 margin-right: 11%;
 font-family: 'Arial Regular';
-color: black;
+color:  rgb(9,25,91);
 font-weight: bold;
 }
 .template{
@@ -226,10 +223,16 @@ font-weight: bold;
   background-size: cover;
 }
 .text{
-  font-size: 200%;
+  font-size: 210%;
   font-family: 'Arial Regular';
-color: black;
-font-weight: bold;
+ color:  rgb(9,25,91);
+   font-weight: bold;
+}
+.btn{
+  margin-top: 7%;
+  margin-left: 15%;
+  color: rgb(9,25,91);
+  font-family: 'Arial Regular';
 }
 
 </style>
