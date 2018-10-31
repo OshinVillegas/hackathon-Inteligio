@@ -5,11 +5,8 @@ import home from '@/components/home'
 import profile from '@/components/profile'
 import register from '@/components/register'
 import login from '@/components/login'
-<<<<<<< HEAD
 import splsh from '@/components/splsh'
-=======
 import webcam from '@/components/webcam'
->>>>>>> 57ec9b98ce0b31895fd78068cac83dfc0f7c7f76
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -41,7 +38,6 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: login
-<<<<<<< HEAD
 
     } ,  
     {
@@ -50,13 +46,5 @@ export default new Router({
       component: splsh
 
     }  
-=======
-    },
-    {
-      path: '/webcam',
-      name: 'webcam',
-      component: webcam
-    }   
->>>>>>> 57ec9b98ce0b31895fd78068cac83dfc0f7c7f76
   ]
 })
