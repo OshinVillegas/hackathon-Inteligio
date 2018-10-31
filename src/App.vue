@@ -23,6 +23,7 @@
       <v-icon>more_vert</v-icon>
     </v-btn>
   </v-toolbar>
+  <router-view/>
   </v-app>
 </template>
 
