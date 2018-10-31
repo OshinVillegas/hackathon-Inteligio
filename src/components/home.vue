@@ -1,6 +1,8 @@
 <template>
+
 	  <div>
      <v-btn @click="goQuestions()" color="success">Empezar</v-btn>
+	 <v-btn @click="GetData()">Administrador</v-btn>
   </div>
 </template>
 <script>
