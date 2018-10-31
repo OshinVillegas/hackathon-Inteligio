@@ -147,7 +147,6 @@ export default {
          </div>`,
 
             text: "Example text content",
-            subject: `Visita de `,
             from_email: "villegasoshin25@laboratoria.la",
             from_name: "Bienvenido a Inteligo",
             to: [

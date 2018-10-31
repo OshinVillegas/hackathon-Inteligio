@@ -3,7 +3,8 @@
 		<div class="content-home">
 			<h1 class="titulo">BIENVENIDO A INTELIGO</h1>
 			<h3 class="subtitulo">Somos una empresa de gestión patrimonial, asesoría financiera, custodia y servicios de corretaje, es un placer para nosotros ayudarte. </h3>
-			<v-btn @click="goQuestions()" class="empezar">Empezar</v-btn>
+			<v-btn round @click="goQuestions()" class="empezar">Empezar</v-btn>
+			
 		</div>     
   </div>
 </template>
@@ -29,7 +30,7 @@ export default {
 </script>
 <style scoped>
 .content{
-	background: url('https://github.com/OshinVillegas/hackathon-Inteligo/blob/develop/src/assets/fondoinicio.png?raw=true') no-repeat;
+	background: url('https://images.pexels.com/photos/955447/pexels-photo-955447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat;
 	background-size: cover;
 	height: 100%;
 }
@@ -46,11 +47,12 @@ export default {
 	font-size: 50px;
   letter-spacing: 1px;
   text-align: center;
-  border-left: 8px solid #FFC107;
+  border-left: 8px solid rgb(255, 193, 7);
   display: inline-block;
   margin: 15% 0% 5% 10%;
   padding: 0px 15px;
-  font-family: 'Arial Regular'
+  font-family: 'Arial Regular';
+ 
 }
 .subtitulo{
 

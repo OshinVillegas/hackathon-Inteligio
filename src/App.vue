@@ -1,11 +1,12 @@
 <template>
   <v-app>
  
-  <v-toolbar dark color="colornav">
-    <img class="logo" src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/inteligonav.png" alt="">
-    <v-btn @click="GetData()" color="#FFC107" class="admi" >Administrador</v-btn>
+  <v-toolbar  fluid color="colornav">
+<img class="logo" src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/inteligonav.png" alt="">
+<v-btn round @click="GetData()" color="rgb(255, 193, 7)" class="admi" >Administrador</v-btn>
   </v-toolbar>
   <router-view/>
+   
   </v-app>
 </template>
 <script>
