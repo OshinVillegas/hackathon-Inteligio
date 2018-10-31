@@ -2,7 +2,7 @@
   <v-app>
  
   <v-toolbar dark color="colornav">
-    <img class="logo" src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/logointeligosab.png" alt="">
+    <img class="logo" src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/inte.png" alt="">
   </v-toolbar>
   <router-view/>
   </v-app>
