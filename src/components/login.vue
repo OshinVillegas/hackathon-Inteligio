@@ -215,7 +215,7 @@ font-weight: bold;
 }
 .template{
 
-  background: url("http://proactivo.com.pe/wp-content/uploads/2016/07/la-bolsa-de-valores.jpg");
+  background: url("https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/la-bolsa-de-valores.jpg");
   background-size: cover;
 }
 </style>
