@@ -18,7 +18,7 @@ export default {
     border-color:rgb(9,25,91) !important;
 }
 .logo{
-  border-radius: 100%;
+  /* border-radius:  */
 }
 
 </style>
