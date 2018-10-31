@@ -65,7 +65,7 @@ export default {
   props: [],
   data() {
     return {
-      tipo:"",
+      tipo: "",
       valid: true,
       name: "",
       date: "",
@@ -100,15 +100,14 @@ export default {
           telefono: this.phone,
           email: this.email
         });
-          if (this.gender === "Femenino" ){
-              this.tipo = "Estimada Sra."
-
-            } else{
-              this.tipo = "Estimado Sr."
-            }
+      if (this.gender === "Femenino") {
+        this.tipo = "Estimada Sra.";
+      } else {
+        this.tipo = "Estimado Sr.";
+      }
       this.mandril(this.name);
     },
-  
+
     mandril(pdfBase64String) {
       $.ajax({
         type: "POST",
@@ -121,17 +120,16 @@ export default {
           ${this.tipo} ${this.name}
            <br>
            <br>
-          Inteligo le da la bienvenida .
-          <br>
-          
-          A continuación se adjunta los principales contratos para completar su registro a inteligo.
+          Inteligo le da la bienvenida.A continuación se adjunta los principales contratos para completar su registro a inteligo.
           <br>
           Asimmismo, un asesor se comunicará con usted a la brevedad posible.
           <br>
           <br>
-          Saludos Cordiales
+          Saludos cordiales
           <br>
-          <h6 .title>INTELIGO</h6>
+          <br>
+          <img src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/login/src/assets/inteligopeque%C3%B1o.png">
+          <br>
           <p style="display:none">https://drive.google.com/open?id=17bXJhMNTfsEwv_XHpykwLQYnvEhMGHF8
           https://drive.google.com/open?id=1bC8Bn7A7hMYpJ9yzSJ-nf9hysnpmvIeV</p>
           
