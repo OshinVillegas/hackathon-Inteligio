@@ -1,12 +1,8 @@
 <template>
-
-	  <div>
-     <v-btn @click="goQuestions()" color="success">Empezar</v-btn>
-	 <v-btn @click="GetData()">Administrador</v-btn>
 	<div class="content">
 		<div class="content-home">
-			<h1 class="titulo">INTELIGO</h1>
-			<h3 class="subtitulo">La mejor bolsa de valores de Lima como estan yo aqui improvisando con las letras para que se vea un poco mejor</h3>
+			<h1 class="titulo">BIENVENIDO A INTELIGO</h1>
+			<h3 class="subtitulo">Somos una empresa de gestión patrimonial, asesoría financiera, custodia y servicios de corretaje, es un placer para nosotros ayudarte. </h3>
 			<v-btn @click="goQuestions()" color="success lighten-2">Empezar</v-btn>
 		</div>     
   </div>
@@ -61,8 +57,9 @@ export default {
   font-weight: 100;
 }
 .success{
-	width: 20%;
+	width: 10%;
+	/* height: 10%; */
   margin: 3% 40% 5% 40%;
-	background: #FFC107 !important;
+	background:rgb(9,25,91) !important;
 }
 </style>

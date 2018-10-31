@@ -45,6 +45,11 @@ export default new Router({
       name: 'splsh',
       component: splsh
 
-    }  
+    } ,
+    {
+      path: '/webcam',
+      name: 'webcam',
+      component: webcam
+    }   
   ]
 })
