@@ -1,11 +1,15 @@
 <template>
-<v-container   text-xs-center>
+<v-container   text-xs-center >
     <v-layout   align-center justify-center row fill-height id="app">
-        <v-flex  xs5>
+        <v-flex lg5>
   <v-app id="inspire">
-    <img  src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/login/src/assets/inteligomediano.png" alt="">
-    <v-form ref="form" v-model="valid" lazy-validation>
-      <v-text-field
+    <v-container>
+<v-form class="inte" ref="form" v-model="valid" lazy-validation>
+      <v-container>
+ <img  src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/login/src/assets/inteligomediano.png" alt="">
+      </v-container>
+      
+      <v-text-field 
         v-model="name"
         :rules="nameRules"
         :counter="20"
@@ -50,6 +54,8 @@
       </v-btn>
       <v-btn @click="clear">clear</v-btn>
     </v-form>
+    </v-container>
+    
   </v-app>
   </v-flex>
     </v-layout> 
@@ -175,3 +181,13 @@ export default {
   components: {}
 };
 </script>
+<style scoped>
+.inte {
+  background: rgb(241, 241, 242);
+  border-style: solid;
+  border-color: rgb(241, 241, 242);
+  border-radius: 3%;
+
+} 
+</style>
+
