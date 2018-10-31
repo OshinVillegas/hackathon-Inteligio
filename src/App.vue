@@ -2,7 +2,7 @@
   <v-app>
  
   <v-toolbar  fluid color="colornav">
-    <img src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/logocompleto.png" alt="">
+    <img src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/Screenshot_3.png" alt="">
 <v-btn round @click="GetData()" color="rgb(255, 193, 7)" class="admi" >Administrador</v-btn>
   </v-toolbar>
   <router-view/>
@@ -23,7 +23,7 @@ export default {
   border-radius: 100%;
 }
 .admi{
-  margin-left: 85%;
+  margin-left: 70%;
   color:rgb(9,25,91);
   font-family: 'Arial Regular';
   font-weight: bold;

@@ -1,13 +1,14 @@
 
 <template>
 <div class="template" > 
-  <v-container   text-xs-center >
+  <v-container class="fom"  text-xs-center >
     <v-layout   align-center justify-center row fill-height id="app">
         <v-flex  lg5>
 
 <v-form   id="inspire" class="inte" ref="form" v-model="valid" lazy-validation>
-      <v-container>
- <img  src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/login/src/assets/inteligomediano.png" alt="">
+  <br>
+      <v-container class="text">
+          Déjanos tus datos  
       </v-container>
       
       <v-text-field class='input'
@@ -51,15 +52,17 @@
         required
       ></v-checkbox>
   
-      <v-btn  color="rgb(9,25,91)" class="btnRegistrarse"
+      <v-btn round color="rgb(9,25,91)" class="btnRegistrarse"
         :disabled="!valid"
         @click="Registro"
       >
         Registrarse
       </v-btn>
-      <v-btn color="rgb(9,25,91)" class="btnBorrar"
-       @click="clear">Borrar</v-btn>
+      <v-btn round color="rgb(9,25,91)" class="btnBorrar"
+       @click="clear">Limpiar</v-btn>
+       
     </v-form>
+    
   </v-flex>
     </v-layout> 
 </v-container>
@@ -188,17 +191,20 @@ export default {
 </script>
 <style scoped>
 .inte {
+ 
   background: rgb(241, 241, 242);
   border-style: solid;
   border-color: rgb(241, 241, 242);
   border-radius: 3%;
 } 
 .btnBorrar{
+  margin-bottom: 5%;
   background: black;
   color:white;
   font-family: 'Arial Regular';
 }
 .btnRegistrarse{
+  margin-bottom: 5%;
   background: black;
   color:white;
   font-family: 'Arial Regular';
@@ -218,5 +224,12 @@ font-weight: bold;
   background: url("https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/fondo.png");
   background-size: cover;
 }
+.text{
+  font-size: 200%;
+  font-family: 'Arial Regular';
+color: black;
+font-weight: bold;
+}
+
 </style>
 
