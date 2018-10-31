@@ -2,7 +2,7 @@
   <v-app>
  
   <v-toolbar dark color="colornav">
-    
+    <img class="logo" src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/logointeligosab.png" alt="">
   </v-toolbar>
   <router-view/>
   </v-app>
@@ -16,6 +16,9 @@ export default {
 .colornav {
     background-color: rgb(9,25,91) !important;
     border-color:rgb(9,25,91) !important;
+}
+.logo{
+  border-radius: 100%;
 }
 
 </style>
