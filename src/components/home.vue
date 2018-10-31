@@ -3,7 +3,7 @@
 		<div class="content-home">
 			<h1 class="titulo">BIENVENIDO A INTELIGO</h1>
 			<h3 class="subtitulo">Somos una empresa de gestión patrimonial, asesoría financiera, custodia y servicios de corretaje, es un placer para nosotros ayudarte. </h3>
-			<v-btn @click="goQuestions()" color="success lighten-2">Empezar</v-btn>
+			<v-btn @click="goQuestions()" class="empezar">Empezar</v-btn>
 		</div>     
   </div>
 </template>
@@ -46,20 +46,26 @@ export default {
 	font-size: 50px;
   letter-spacing: 1px;
   text-align: center;
-  border-left: 8px solid #FFC107;
+  border-left: 8px solid rgb(233,214,107);
   display: inline-block;
   margin: 15% 0% 5% 10%;
   padding: 0px 15px;
+  font-family: 'Arial Regular'
 }
 .subtitulo{
+
 	font-size: 25px;
   margin: 0% 0% 5% 10%;
-  font-weight: 100;
+  font-weight: 500;
+  font-family: 'Arial Regular'
 }
-.success{
+.empezar{
 	width: 10%;
 	/* height: 10%; */
   margin: 3% 40% 5% 40%;
-	background:rgb(9,25,91) !important;
+	background:rgb(233,214,107) !important;
+	color:rgb(9,25,91);
+	font-family: 'Arial Regular';
+	font-weight: bold;
 }
 </style>
