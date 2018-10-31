@@ -147,9 +147,9 @@ export default {
          </div>`,
 
             text: "Example text content",
-            subject: `Contratos `,
+            "subject": ` Bienvenido a Inteligo ${this.name} `,
             from_email: "villegasoshin25@laboratoria.la",
-            from_name: "Bienvenido a Inteligo",
+            from_name: "Inteligo",
             to: [
               {
                 email: this.email,
