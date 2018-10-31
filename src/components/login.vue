@@ -215,7 +215,7 @@ font-weight: bold;
 }
 .template{
 
-  background: url("https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/la-bolsa-de-valores.jpg");
+  background: url("https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/fondo.png");
   background-size: cover;
 }
 </style>
