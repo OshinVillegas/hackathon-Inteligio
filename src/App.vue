@@ -3,7 +3,7 @@
  
   <v-toolbar  fluid color="colornav">
     <img src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/Screenshot_3.png" alt="">
-<button  @click="GetData()" type="button" class="btn btn-link">Link</button>
+<button  @click="GetData()" type="button" class="btn btn-link">Administrador</button>
   </v-toolbar>
   <router-view/>
    
@@ -22,11 +22,12 @@ export default {
 .logo{
   border-radius: 100%;
 }
-.admi{
-  margin-left: 70%;
-  color:rgb(9,25,91);
-  font-family: 'Arial Regular';
+
+.btn{
+   font-family: 'Arial Regular';
   font-weight: bold;
+ margin-left: 75%;
+ color:  #ffc107;
 }
 
 </style>
