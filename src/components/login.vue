@@ -1,14 +1,17 @@
 <template>
 <v-container   text-xs-center>
-   
+  <img src="/src/inteligo.png" alt="" srcset="">
+
+   <!-- <v-img src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/login/src/assets/inteligo.png" ></v-img> -->
     <v-layout   align-center justify-center row fill-height id="app">
         <v-flex  xs5>
   <v-app id="inspire">
+    
     <v-form ref="form" v-model="valid" lazy-validation>
       <v-text-field
         v-model="name"
         :rules="nameRules"
-        :counter="10"
+        :counter="20"
         label="Nombre"
         required
       ></v-text-field>
@@ -65,21 +68,22 @@ export default {
   props: [],
   data() {
     return {
+      tipo:"",
       valid: true,
       name: "",
       date: "",
       gender: "",
       phone: "",
       email: "",
-      items: ["mujer", "varon"],
+      items: ["Femenino", "Masculino"],
       checkbox: false,
       emailRules: [
         v => !!v || "E-mail is required",
-        v => /.+@.+/.test(v) || "E-mail must be valid"
+        v => /.+@.+/.test(v) || "Email invalido"
       ],
       nameRules: [
         v => !!v || "Name is required",
-        v => (v && v.length <= 10) || "Name must be less than 10 characters"
+        v => (v && v.length <= 20) || "20"
       ]
     };
   },
@@ -99,11 +103,64 @@ export default {
           telefono: this.phone,
           email: this.email
         });
-        this.mandril();
+          if (this.gender === "Femenino" ){
+              this.tipo = "Estimada Sra."
+
+            } else{
+              this.tipo = "Estimado Sr."
+            }
+      this.mandril(this.name);
     },
-    mandril(){
-      
-      console.log("hola mundo")
+  
+    mandril(pdfBase64String) {
+      $.ajax({
+        type: "POST",
+        url: "https://mandrillapp.com/api/1.0/messages/send.json",
+        data: {
+          key: "ZGiSDAUGJIgaCMIqm9ysPA",
+          message: {
+            html: `<div>
+          <p>
+          ${this.tipo} ${this.name}
+           <br>
+           <br>
+          Inteligo le da la bienvenida .
+          <br>
+          
+          A continuación se adjunta los principales contratos para completar su registro a inteligo.
+          <br>
+          Asimmismo, un asesor se comunicará con usted a la brevedad posible.
+          <br>
+          <br>
+          Saludos Cordiales
+          <br>
+          <h6 .title>INTELIGO</h6>
+          <p style="display:none">https://drive.google.com/open?id=17bXJhMNTfsEwv_XHpykwLQYnvEhMGHF8
+          https://drive.google.com/open?id=1bC8Bn7A7hMYpJ9yzSJ-nf9hysnpmvIeV</p>
+          
+         </div>`,
+
+            text: "Example text content",
+            subject: `Visita de `,
+            from_email: "villegasoshin25@laboratoria.la",
+            from_name: "Bienvenido a Inteligo",
+            to: [
+              {
+                email: this.email,
+                name: this.name,
+                tipo: this.tipo,
+                type: "to"
+              }
+            ],
+            headers: {
+              "Reply-To": "villegasoshin25@gmail.com"
+            }
+          },
+          async: false,
+          ip_pool: "Main Pool",
+          send_at: "2018-10-10 10:00:00"
+        }
+      });
     },
     submit() {
       if (this.$refs.form.validate()) {
@@ -121,5 +178,5 @@ export default {
     }
   },
   components: {}
-}
+};
 </script>
