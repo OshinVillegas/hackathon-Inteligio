@@ -5,6 +5,7 @@ import home from '@/components/home'
 import profile from '@/components/profile'
 import register from '@/components/register'
 import login from '@/components/login'
+import splsh from '@/components/splsh'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -37,6 +38,12 @@ export default new Router({
       name: 'login',
       component: login
 
-    }     
+    } ,  
+    {
+      path: '/splash',
+      name: 'splsh',
+      component: splsh
+
+    }  
   ]
 })
