@@ -1,12 +1,9 @@
 <template>
 <v-container   text-xs-center>
-  <img src="/src/inteligo.png" alt="" srcset="">
-
-   <!-- <v-img src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/login/src/assets/inteligo.png" ></v-img> -->
     <v-layout   align-center justify-center row fill-height id="app">
         <v-flex  xs5>
   <v-app id="inspire">
-    
+    <img  src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/login/src/assets/inteligomediano.png" alt="">
     <v-form ref="form" v-model="valid" lazy-validation>
       <v-text-field
         v-model="name"
