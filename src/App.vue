@@ -2,10 +2,7 @@
   <v-app>
  
   <v-toolbar  fluid color="colornav">
-<img class="logo" src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/inteligonav.png" alt="width:50%">
-<br/>
-<br/>
-<img src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/inteligomedianoblanco.png" alt="">
+    <img src="https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/logocompleto.png" alt="">
 <v-btn round @click="GetData()" color="rgb(255, 193, 7)" class="admi" >Administrador</v-btn>
   </v-toolbar>
   <router-view/>
