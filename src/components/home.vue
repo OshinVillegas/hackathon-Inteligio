@@ -30,7 +30,7 @@ export default {
 </script>
 <style scoped>
 .content{
-	background: url('https://images.pexels.com/photos/955447/pexels-photo-955447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat;
+	background: url('https://raw.githubusercontent.com/OshinVillegas/hackathon-Inteligo/develop/src/assets/fondo.png') no-repeat;
 	background-size: cover;
 	height: 100%;
 }
